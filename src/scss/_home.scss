@@ -1,0 +1,114 @@
+
+/* Home
+   ========================================================================== */
+
+/* article section  */
+#content-box {
+  position: relative;
+  padding-bottom: 5px;
+  overflow: hidden;
+  background-color: #fff;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1px;
+    height: 100%;
+    background: url('../img/common/light_dots.png') repeat-y;
+  }
+}
+
+.content-box-col {
+  float: left;
+  width: 320px;
+
+  > header {
+    position: relative;
+    height: 55px;
+    margin-bottom: 24px;
+    padding: 0 20px;
+    border-bottom: 2px solid #e5e5e5;
+    line-height: 55px;
+
+    .white-text {
+      margin: 0;
+      font-size: 12px;
+    }
+  }
+
+  .ie8 & > header {
+    -webkit-border-radius: 0 10px 0 0;
+    border-radius: 0 10px 0 0;
+    behavior: url('js/PIE.htc');
+  }
+
+  .ie8 &:first-child > header {
+    -webkit-border-radius: 10px 0 0;
+    border-radius: 10px 0 0;
+    behavior: url('js/PIE.htc');
+  }
+}
+
+.content-box-inner {
+  padding: 0 20px;
+}
+
+.news-cont {
+  margin-bottom: 22px;
+
+  h2 {
+    margin-bottom: 16px;
+    font-size: 13px;
+    color: #2a1f0f;
+  }
+
+  img {
+    float: left;
+  }
+
+  p {
+    margin: -6px 0 0 120px;
+    overflow: hidden;
+    vertical-align: top;
+  }
+
+  .icon-action {
+    display: block;
+    margin-top: 8px;
+  }
+}
+
+//social links with icons
+.social-action {
+  display: inline-block;
+  height: 22px;
+  margin: 6px 0 0 10px;
+  padding-left: 30px;
+  line-height: 22px;
+  background-image: url('../img/common/sprites.png');
+  background-repeat: no-repeat;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &.facebook {
+    background-position: 0 0;
+  }
+
+  &.twitter {
+    background-position: 0 -27px;
+  }
+
+  &.google {
+    background-position: 0 -54px;
+  }
+}
+
+// box with links
+.link-box .sb-box-inner {
+  line-height: 29px;
+  padding-bottom: 11px;
+}
