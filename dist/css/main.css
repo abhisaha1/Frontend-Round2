@@ -2,7 +2,7 @@
 
     Project: FrontEnd Test
     Author: XHTMLized
-    Last updated: Fri Feb 13 2015 10:48:40
+    Last updated: Fri Feb 13 2015 10:53:38
 
     1. Normalize
     2. Common
@@ -580,6 +580,7 @@ abbr.border-none {
 .red-bg-grad {
   background: #fb2e6d;
   background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxsaW5lYXJHcmFkaWVudCBpZD0iZzEiIHgyPSIwJSIgeTI9IjEwMCUiPjxzdG9wIHN0b3AtY29sb3I9IiNmYjJlNmQiLz48c3RvcCBvZmZzZXQ9Ii41IiBzdG9wLWNvbG9yPSIjZTYxMDUyIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2cxKSIvPjwvc3ZnPg==);
+  background: linear-gradient(to bottom, #fb2e6d 0%, #e61052 50%);
   -pie-background: linear-gradient(#fb2e6d, #e61052);
   behavior: url("js/PIE.htc");
 }

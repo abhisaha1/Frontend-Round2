@@ -20,33 +20,33 @@
     },
 
     /**
-     * colorbox gallery on start
+     * Auto trigger this function on start
      */
     initColorbox: function(selector) {
       var images = $(selector),
-          imgQuant = images.length,
-          actImg = 0;
+          totalImages = images.length,
+          count = 0;
 
       //open first image
-      show_img();
+      popout_Img();
 
-      //set timer on colorbox close
+      //set timer on callback of image close
       $(document).bind('cbox_complete', function(){
         setTimeout( function() {
-          show_img();
+          popout_Img();
         }, 2000);
       });
 
       /**
-       * function show lightbox
+       * Display image
        */
-      function show_img() {
-        if(actImg === imgQuant) {
+      function popout_Img() {
+        if(count === totalImages) {
           $.colorbox.close();
         }
         else {
-          $.colorbox({href: images.eq(actImg).attr('src')});
-          actImg++;
+          $.colorbox({href: images.eq(count).attr('src')});
+          count++;
         }
       }
     },
