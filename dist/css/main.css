@@ -2,7 +2,7 @@
 
     Project: FrontEnd Test
     Author: XHTMLized
-    Last updated: Fri Feb 13 2015 00:47:13
+    Last updated: Fri Feb 13 2015 10:16:54
 
     1. Normalize
     2. Common
@@ -552,6 +552,10 @@ abbr.border-none {
   color: #fff;
   text-transform: uppercase;
   text-shadow: -1px -1px 0 #bd1347;
+}
+
+.black-text {
+  color: #000;
 }
 
 .sb-box {

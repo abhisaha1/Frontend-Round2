@@ -6,7 +6,7 @@ module.exports = function(grunt) {
 
   grunt.config('notify', {
     options: {
-      title: 'test5'
+      title: 'FrontEnd Test'
     },
     build: {
       options: {

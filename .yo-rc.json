@@ -1,7 +1,7 @@
 {
   "generator-xh": {
     "config": {
-      "projectName": "test5",
+      "projectName": "FrontEnd Test",
       "useBranding": true,
       "reloader": "LiveReload",
       "server": false,
