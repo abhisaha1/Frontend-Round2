@@ -42,8 +42,8 @@ module.exports = function (grunt) {
   grunt.registerTask('postinstall', [
     'copy:normalize',
     'copy:pie',
-    'copy:jquery',
-    'copy:colorbox'
+    'copy:jquery'
+   // 'copy:colorbox'
   ]);
 
   grunt.registerTask('qa', 'Assure quality', [

@@ -10,7 +10,8 @@
       "isWP": false,
       "features": [
         "useModernizr",
-        "useCSS3Pie"
+        "useCSS3Pie",
+        "useBootstrap"
       ]
     }
   }

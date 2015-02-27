@@ -1,0 +1,40 @@
+
+/* Menu Customization
+   ========================================================================== */
+
+.navbar-toggle {
+    margin-top: 18px;
+}
+.navbar-brand {
+    height: 70px;
+    margin: 0;
+    padding: 8px 20px;
+}
+.navbar-brand img {
+    max-height: 50px;
+}
+.navbar {
+    border-radius: 0;
+}
+.navbar-nav > li > a {
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    text-transform: uppercase;
+}
+.navbar-inverse .navbar-nav > li > a {
+    margin-left: 1px;
+}
+.navbar-inverse .navbar-nav > .active > a {
+    background-color: transparent;//$color_primary;
+    color: $color_primary;
+}
+
+.navbar-inverse .navbar-nav > .active > a:hover {
+    background-color: transparent;//$color_primary;
+}
+.navbar-inverse .navbar-nav > li > a:hover {
+    background-color: transparent;//$color_secondary;
+    color: $color_primary;
+}

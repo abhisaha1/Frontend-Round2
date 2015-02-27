@@ -8,9 +8,16 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Home - FrontEnd Test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
   <link rel="stylesheet" media="all" href="css/main.css">
 
-  <script src="js/modernizr.min.js"></script>
   <!--[if lt IE 9]>
 
   <![endif]-->
@@ -20,135 +27,173 @@
 
 <body>
 
-  <div id="container">
+  <div id="main">
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="navbar-brand"><img alt="Vocation" src="img/home/logo-v2-light1.png">
+          </a>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar">
 
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="./">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li><a href="../navbar-static-top/">Link1</a>
+            </li>
+            <li><a href="../navbar-fixed-top/">Link2</a>
+            </li>
+          </ul>
+        </div>
+        <!--/.nav-collapse -->
+      </div>
+      <!--/.container -->
+    </nav>
 
-    <div id="page">
-      <!-- / page-nav -->
-      <div id="content-left">
-        <div id="content-box" class="box">
-          <section class="content-box-col">
-            <header class="red-bg-grad">
-              <h2 class="white-text">X-Plosion products</h2>
-            </header>
-            <div class="content-box-inner">
-              <article class="news-cont">
-                <h3 class="black-text">We say NO to artificial flavors</h3>
-                <img class="img-auto-open img-frame" src="img/home/news1.jpg" alt="News image" />
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                  <a href="#" class="icon-action" title="Read more">More</a>
-                </p>
-              </article>
-              <!-- / news-cont -->
-              <article class="news-cont">
-                <h3 class="black-text">New flavour added</h3>
-                <img class="img-auto-open img-frame" src="img/home/news2.jpg" alt="News image" />
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                  <a href="#" class="icon-action" title="Read more">More</a>
-                </p>
-              </article>
-              <!-- / news-cont -->
+    <!--<section>
+	<div class="section-content"> -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-6 onscroll-animate fadeIn">
+          <article>
+            <div class="post-preview">
+              <a href="#">
+                <div class="post-preview-img">
+                  <div class="post-preview-img-inner">
+                    <img alt="post img" src="img/home/1.jpg">
+                  </div>
+                  <div class="post-preview-label">
+                    <i class="text-white glyphicon glyphicon-heart pull-left"></i>
+                    <span class="post-rating pull-right">
+											<i class="glyphicon glyphicon-star text-white"></i>
+											<i class="glyphicon glyphicon-star text-white"></i>
+											<i class="glyphicon glyphicon-star text-white"></i>
+											<i class="glyphicon glyphicon-star-empty text-white"></i>
+											<i class="glyphicon glyphicon-star-empty text-white"></i>
+										</span>
+                  </div>
+                </div>
+              </a>
+              <div class="post-preview-content">
+                <h2 class="post-preview-heading">568 E 1st Ave, Ney Jersey</h2>
+                <p>This is a 5 bedroom, 1.5 bathroom, single family home. It is located at 335 W 2nd Ave Artesian, California.</p>
+                <div class="post-preview-price-container">
+                  <a href="" class="btn btn-custom btn-sm">Book Now</a>
+                  <p class="listing-price">$2.500 <span class="small">per month</span>
+
+                  </p>
+                </div>
+                <div class="post-preview-detail">
+                  <a href="#">2500 Sq Ft</a>
+                  <span class="delimiter-inline"></span> <a href="#">2 Bedrooms</a> <span class="delimiter-inline"></span> <a href="#">Wi-Fi</a>
+                </div>
+              </div>
             </div>
-          </section>
-          <!-- / content-box-col -->
-          <section class="content-box-col">
-            <header class="red-bg-grad">
-              <h2 class="white-text">X-Plosion expansion</h2>
-            </header>
-            <div class="content-box-inner">
-              <article class="news-cont">
-                <h3 class="black-text">X-Plosion is a hit in Japan</h3>
-                <img class="img-auto-open img-frame" src="img/home/news3.jpg" alt="News image" />
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                  <a href="#" class="icon-action" title="Read more">More</a>
-                </p>
-              </article>
-              <!-- / news-cont -->
-              <article class="news-cont">
-                <h3 class="black-text">Danish elder hooked on X-Plosion</h3>
-                <img class="img-auto-open img-frame" src="img/home/news4.jpg" alt="News image" />
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                  <a href="#" class="icon-action" title="Read more">More</a>
-                </p>
-              </article>
-              <!-- / news-cont -->
+          </article>
+        </div>
+        <!-- .col-md-4 -->
+        <div class="col-md-4 col-sm-6 onscroll-animate fadeIn">
+          <article>
+            <div class="post-preview">
+              <a href="#">
+                <div class="post-preview-img">
+                  <div class="post-preview-img-inner">
+                    <img alt="post img" src="img/home/3.jpg">
+                  </div>
+                  <div class="post-preview-label">
+                    <span class="text-white glyphicon glyphicon-heart push-left"></span>
+                    <span class="post-rating pull-right">
+										<span class="glyphicon glyphicon-star text-white"></span>
+                    <span class="glyphicon glyphicon-star text-white"></span>
+                    <span class="glyphicon glyphicon-star text-white"></span>
+                    <span class="glyphicon glyphicon-star-empty text-white"></span>
+                    <span class="glyphicon glyphicon-star-empty text-white"></span>
+                    </span>
+                  </div>
+                </div>
+              </a>
+              <div class="post-preview-content">
+                <h2 class="post-preview-heading">568 E 1st Ave, Ney Jersey</h2>
+                <p>This is a 5 bedroom, 1.5 bathroom, single family home. It is located at 335 W 2nd Ave Artesian, California.</p>
+                <div class="post-preview-price-container">
+                  <a href="" class="btn btn-custom btn-sm">Book Now</a>
+                  <p class="listing-price">$2.500 <span class="small">per month</span>
+
+                  </p>
+                </div>
+                <div class="post-preview-detail">
+                  <a href="#">2500 Sq Ft</a>
+                  <span class="delimiter-inline"></span> <a href="#">2 Bedrooms</a> <span class="delimiter-inline"></span> <a href="#">Wi-Fi</a>
+                </div>
+              </div>
             </div>
-          </section>
-          <!-- / content-box-col -->
+          </article>
         </div>
-        <!-- / content-box -->
+        <!-- .col-md-4 -->
+        <div class="col-md-4 col-sm-6 onscroll-animate fadeIn">
+          <article>
+            <div class="post-preview">
+              <a href="#">
+                <div class="post-preview-img">
+                  <div class="post-preview-img-inner">
+                    <img alt="post img" src="img/home/4.jpg">
+                  </div>
+                  <div class="post-preview-label">
+                    <span class="text-white glyphicon glyphicon-heart push-left"></span>
+                    <span class="post-rating pull-right">
+										<span class="glyphicon glyphicon-star text-white"></span>
+                    <span class="glyphicon glyphicon-star text-white"></span>
+                    <span class="glyphicon glyphicon-star text-white"></span>
+                    <span class="glyphicon glyphicon-star-empty text-white"></span>
+                    <span class="glyphicon glyphicon-star-empty text-white"></span>
+                    </span>
+                  </div>
+                </div>
+              </a>
+              <div class="post-preview-content">
+                <h2 class="post-preview-heading">568 E 1st Ave, Ney Jersey</h2>
+                <p>This is a 5 bedroom, 1.5 bathroom, single family home. It is located at 335 W 2nd Ave Artesian, California.</p>
+                <div class="post-preview-price-container">
+                  <a href="" class="btn btn-custom btn-sm">Book Now</a>
+                  <p class="listing-price">$2.500 <span class="small">per month</span>
+
+                  </p>
+                </div>
+                <div class="post-preview-detail">
+                  <a href="#">2500 Sq Ft</a>
+                  <span class="delimiter-inline"></span> <a href="#">2 Bedrooms</a> <span class="delimiter-inline"></span> <a href="#">Wi-Fi</a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <!-- .col-md-4 -->
       </div>
-      <!-- / content-left -->
-      <div id="content-right">
-        <div class="sb-box box">
-          <h3 class="sb-box-heading">Follow Us</h3>
-          <div class="sb-box-inner">
-            <a href="#" class="social-action facebook" title="Fallow us on Facebook">Facebook</a>
-            <a href="#" class="social-action twitter" title="Fallow us on Twitter">Twitter</a>
-            <a href="#" class="social-action google" title="Fallow us on Google+">Google+</a>
-          </div>
-          <!-- / sb-box-inner -->
-        </div>
-        <!-- / sb-box -->
-        <div class="sb-box link-box box">
-          <h3 class="sb-box-heading">Randomly selected</h3>
-          <div class="sb-box-inner">
-            <a href="#" class="action-items-icon" title="X-Plosion is a hit in Japan">X-Plosion is a hit in Japan</a>
-            <br />
-            <a href="#" class="action-items-icon" title="3 new flavors added">3 new flavors added</a>
-            <br />
-            <a href="#" class="action-items-icon" title="Check our new promo at Youtube">Check our new promo at Youtube</a>
-            <br />
-            <a href="#" class="action-items-icon" title="We say NO to artificial flavours">We say NO to artificial flavours</a>
-            <br />
-            <a href="#" class="action-items-icon" title="X-Plosion and your health">X-Plosion and your health</a>
-          </div>
-          <!-- / sb-box-inner -->
-        </div>
-        <!-- / sb-box -->
-        <div class="sb-box box">
-          <h3 class="sb-box-heading">Where you can find us?</h3>
-          <div class="sb-box-inner vcard">
-            <span class="fn org bold">X-Plosion Ltd</span>
-            <br />
-            <span class="adr">
-              <span class="address-line1">9 Danbury Road</span>
-            <br />
-            <span class="address-line2">Wilton</span>
-            <br />
-            <span class="address-line3">CT 06897</span>
-            </span>
-          </div>
-          <!-- / sb-box-inner -->
-        </div>
-        <!-- / sb-box -->
-      </div>
-      <!-- / content-right -->
-      <div class="clear"></div>
+      <!-- / .row -->
     </div>
-    <!-- / page-wrapper -->
+    <!-- / .container -->
 
-    <!--<aside class="sidebar">
-  <p>sidebar</p>
-</aside>
--->
     <footer class="footer">
       <p></p>
     </footer>
     <!-- / footer -->
 
   </div>
-  <!-- / container -->
+  <!-- / main -->
 
   <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
   <script>
     window.jQuery || document.write('<script src="js/jquery.min.js">\x3C/script>')
   </script>
-  <script src="js/plugins.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+
 
   <script src="js/main.js"></script>
   <script>

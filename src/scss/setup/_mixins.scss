@@ -7,3 +7,34 @@
     clear: both;
   }
 }
+
+
+//@extend-elements
+//original selectors
+//.post-preview
+%post {
+  background-color: $color_light;
+  margin-bottom: 30px;
+  //Instead of the line below you could use @includetransition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+  transition: all 0.3s ease-out;
+}
+
+//original selectors
+//.post-preview .post-preview-img .post-preview-label
+%post_label {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  padding: 5px 20px 0;
+  z-index: 10;
+}
+
+//original selectors
+//.post-preview .post-preview-heading
+%post_head {
+  font-family: $font_0, $font_1;
+  font-size: 18px;
+  color: $black;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}

@@ -1,157 +1,78 @@
-
 /* Common
    ========================================================================== */
-
-html,
-button,
-input,
-select,
-textarea {
-    color: $color-prime;
-}
-
 body {
-  background: #eae2d7;
-  font: 12px/20px Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: $font_0, $font_1;
+  color: $color_body;
+  font-size: 12px;
+  line-height: 1.68;
+  overflow-x: hidden;
 }
 
-
+.text-white {
+  color: #FFF;
+}
 
 a {
-  color: $color-prime;
-  text-decoration: none;
+  color: inherit;
+  outline: none;
+  transition: all 0.2s ease-out 0s;
+  &:focus {
+    outline: none;
+  };
 }
-
-a:hover {
-  text-decoration: underline;
-}
-
-.clear {
-  clear:both;
-  display: table;
-}
-
-.bold {
-  font-weight: bold;
-}
-
-.border-none,
-abbr.border-none {
-  border: none;
-}
-
-.img-frame {
-  padding: 2px;
-  border: 1px solid #eae1d4;
-}
-
-.color-bg {
-  color: $color-bg;
-}
-
-.bg-color {
-  color: $color-prime;
-}
-
-.icon-link {
-  @extend .color-bg;
-}
-
-.icon-action {
-  @extend .color-bg;
-
+.delimiter-inline {
+  padding-left: 4px;
+  padding-right: 4px;
   &:after {
-    content: '';
-    display: inline-block;
-    width: 12px;
-    height: 9px;
-    margin-left: 10px;
-    background: url('../img/common/sprites.png') 0 -90px no-repeat;
-
+    content: ' | ';
   }
 }
 
-.bg-link {
-  @extend .bg-color;
+.btn {
+  border-radius: 0px;
 }
-
-.action-items-icon {
-  @extend .bg-color;
-
-  &:before {
-    content: '';
-    display: inline-block;
-    width: 12px;
-    height: 9px;
-    margin-right: 5px;
-    background: url('../img/common/sprites.png') 0 -81px no-repeat;
+.btn-custom { 
+    color: $white; 
+    background-color: $color_primary; 
+    border-color: $color_primary_border; 
+  } 
+   
+  .btn-custom:hover, 
+  .btn-custom:focus, 
+  .btn-custom:active, 
+  .btn-custom.active, 
+  .open .dropdown-toggle.btn-custom { 
+    color: $white; 
+    background-color: $color_secondary; 
+    border-color: $color_secondary_border;
+  } 
+   
+  .btn-custom:active, 
+  .btn-custom.active, 
+  .open .dropdown-toggle.btn-custom { 
+    background-image: none; 
+  } 
+   
+  .btn-custom.disabled, 
+  .btn-custom[disabled], 
+  fieldset[disabled] .btn-custom, 
+  .btn-custom.disabled:hover, 
+  .btn-custom[disabled]:hover, 
+  fieldset[disabled] .btn-custom:hover, 
+  .btn-custom.disabled:focus, 
+  .btn-custom[disabled]:focus, 
+  fieldset[disabled] .btn-custom:focus, 
+  .btn-custom.disabled:active, 
+  .btn-custom[disabled]:active, 
+  fieldset[disabled] .btn-custom:active, 
+  .btn-custom.disabled.active, 
+  .btn-custom[disabled].active, 
+  fieldset[disabled] .btn-custom.active { 
+    background-color: $color_primary; 
+    border-color: $color_secondary_border; 
+  } 
+   
+  .btn-custom .badge { 
+    color: $color_primary; 
+    background-color: $white; 
   }
-}
-
-.box {
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  -webkit-box-shadow:  2px 2px 0 0 rgba(0, 0, 0, 0.1);
-  box-shadow:  2px 2px 0 0 rgba(0, 0, 0, 0.1);
-  position: relative;
-  behavior: url('js/PIE.htc');
-}
-
-.ie8 .box {
-}
-
-.white-text {
-  font-weight: bold;
-  color: #fff;
-  text-transform: uppercase;
-  text-shadow: -1px -1px 0 #bd1347;
-}
-.black-text {
-    color: #000;
-}
-
-.sb-box {
-  margin-bottom: 20px;
-  background-color: #fff;
-}
-
-.sb-box-heading {
-  margin: 0 0 10px;
-  padding: 15px 19px 19px;
-  font-size: 14px;
-  font-weight: bold;
-  color: $color-bg;
-  text-transform: uppercase;
-  background: url('../img/common/light_dots.png') left bottom repeat-x;
-}
-
-.sb-box-inner {
-  padding: 0 19px 20px;
-}
-
-.red-bg-grad {
-  background: #fb2e6d;
-  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxsaW5lYXJHcmFkaWVudCBpZD0iZzEiIHgyPSIwJSIgeTI9IjEwMCUiPjxzdG9wIHN0b3AtY29sb3I9IiNmYjJlNmQiLz48c3RvcCBvZmZzZXQ9Ii41IiBzdG9wLWNvbG9yPSIjZTYxMDUyIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2cxKSIvPjwvc3ZnPg==);
-  background: -moz-linear-gradient(top,  #fb2e6d 0%, $color-bg 50%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fb2e6d), color-stop(50%,$color-bg));
-  background: -webkit-linear-gradient(top,  #fb2e6d 0%,$color-bg 50%);
-  background: -o-linear-gradient(top,  #fb2e6d 0%,$color-bg 50%);
-  background: linear-gradient(to bottom,  #fb2e6d 0%,$color-bg 50%);
-  -pie-background: linear-gradient(#fb2e6d, $color-bg);
-  behavior: url('js/PIE.htc');
-}
-
-#container {
-  width: $page-width;
-  margin: 0 auto;
-}
-
-#content-left {
-  float: left;
-  width: 640px;
-}
-
-#content-right {
-  float: right;
-  width: 300px;
-}
