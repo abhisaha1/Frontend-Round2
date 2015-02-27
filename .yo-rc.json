@@ -9,8 +9,6 @@
       "ignoreDist": false,
       "isWP": false,
       "features": [
-        "useModernizr",
-        "useCSS3Pie",
         "useBootstrap"
       ]
     }
